@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    list-style: none;
+    display: inline-flex;
+    background-color: #00E;
+    width: 100%;
+}
