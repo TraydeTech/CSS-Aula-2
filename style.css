@@ -3,9 +3,69 @@
     padding: 0;
 }
 
+#separador{
+    width: 100%;
+}
+
 .menu{
     list-style: none;
     display: inline-flex;
-    background-color: #00E;
+    background-color: #00C;
+    width: 100%;
+    color: #FFF;
+}
+
+.menu a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.menu li{
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu li ul{
+    list-style: none;
+    position: fixed;
+    display: none;
+    background-color: #00C;
+    border-radius: 0 0 10px 0px;
+}
+
+.menu li ul li{ /* HTML CSS Javacript */
+    text-align: left;
     width: 100%;
 }
+
+.menu li ul li ul{ /* terceira lista */
+    display: none; /* esse codigo faz com que a tabela nao nasce visivel */
+}
+
+.menu li ul li ul li{ /* basico intermediario avancado */
+    display: none;
+    background-color: #00C;
+}
+
+.menu li:hover{
+    background-color: #00E;
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+.menu li ul li:hover{
+    background-color: #00E;
+}
+
+.menu li ul li:hover ul{
+    display: inline-flex;
+    margin-left: 37px;
+}
+.menu li ul li:hover ul li{
+    display: inline-flex;
+    width: 100px;
+}
+
